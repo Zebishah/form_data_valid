@@ -1,115 +1,83 @@
-import React from 'react'
+import React from "react";
 
 const FormData = () => {
     return (
         <div>
-            <div className="bg-white py-6 sm:py-8 lg:py-12">
-                <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    {/* text - start */}
+            <div className="bg-[#232323] w-full h-screen py-4">
+                <div className="mx-auto max-w-screen-2xl px-4 md:px-8 flex flex-col justify-center items-center">
                     <div className="mb-10 md:mb-16">
-                        <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+                        <h2 className="mb-4 text-center text-2xl font-bold text-blue-600 marker:md:mb-6 lg:text-3xl">
                             Get in touch
                         </h2>
-                        <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-                            This is a section of some simple filler text, also known as placeholder
-                            text. It shares some characteristics of a real written text but is
-                            random or otherwise generated.
+                        <p className="mx-auto max-w-screen-md text-center text-blue-600 font-sans md:text-lg">
+                            This is a section of some simple filler text, also known as
+                            placeholder text. It shares some characteristics of a real written
+                            text but is random or otherwise generated.
                         </p>
                     </div>
-                    {/* text - end */}
-                    {/* form - start */}
-                    <form className="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
-                        <div>
-                            <label
-                                htmlFor="first-name"
-                                className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
-                            >
-                                First name*
-                            </label>
-                            <input
-                                name="first-name"
-                                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                htmlFor="last-name"
-                                className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
-                            >
-                                Last name*
-                            </label>
-                            <input
-                                name="last-name"
-                                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
-                            />
-                        </div>
-                        <div className="sm:col-span-2">
-                            <label
-                                htmlFor="company"
-                                className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
-                            >
-                                Company
-                            </label>
-                            <input
-                                name="company"
-                                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
-                            />
-                        </div>
-                        <div className="sm:col-span-2">
-                            <label
-                                htmlFor="email"
-                                className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
-                            >
-                                Email*
-                            </label>
-                            <input
-                                name="email"
-                                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
-                            />
-                        </div>
-                        <div className="sm:col-span-2">
-                            <label
-                                htmlFor="subject"
-                                className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
-                            >
-                                Subject*
-                            </label>
-                            <input
-                                name="subject"
-                                className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
-                            />
-                        </div>
-                        <div className="sm:col-span-2">
-                            <label
-                                htmlFor="message"
-                                className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
-                            >
-                                Message*
-                            </label>
-                            <textarea
-                                name="message"
-                                className="h-64 w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
-                                defaultValue={""}
-                            />
-                        </div>
-                        <div className="flex items-center justify-between sm:col-span-2">
-                            <button className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">
-                                Send
-                            </button>
-                            <span className="text-sm text-gray-500">*Required</span>
-                        </div>
-                        <p className="text-xs text-gray-400">
-                            By signing up to our newsletter you agree to our{" "}
-                            <a href="#" className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>
+                    <form className="flex flex-col gap-y-1 border-2 border-blue-600 bg-[#3b3b3b] shadow-sm shadow-black w-[70%] justify-center items-center p-3">
+                        <div className="flex flex-row gap-x-2 w-[98%] justify-center items-center p-2">
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[50%]">
+                                <label htmlFor="F-name " className="text-blue-600 font-sans">First-Name</label>
+                                <input type="text" id="F-name" name="F-name" placeholder="First Name" className="p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans" />
+                            </div>
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[50%]">
+                                <label htmlFor="L-name" className="text-blue-600 font-sans">Last-Name</label>
+                                <input type="text" id="L-name" name="L-name" placeholder="Last Name" className="p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans" />
+                            </div>
 
-                        </p>
+                        </div>
+                        <div className="flex flex-row gap-x-2 w-[98%] justify-center items-center p-2">
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[50%]">
+                                <label htmlFor="Email " className="text-blue-600 font-sans">Email</label>
+                                <input type="email" id="Email" name="Email" placeholder="Email" className="p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans" />
+                            </div>
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[50%]">
+                                <label htmlFor="Phone" className="text-blue-600 font-sans">Contact-No</label>
+                                <input type="text" id="Phone" name="Phone" placeholder="Your Number" className="p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans" />
+                            </div>
+
+                        </div>
+                        <div className="flex flex-row gap-x-2 w-[98%] justify-center items-center p-2">
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[50%]">
+                                <label htmlFor="Degree " className="text-blue-600 font-sans">Degree Programme</label>
+                                <input type="text" id="Degree" name="Degree" placeholder="Degree Programme" className="p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans" />
+                            </div>
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[50%]">
+                                <label htmlFor="Domain" className="text-blue-600 font-sans">Internship Domain</label>
+                                <input type="text" id="Domain" name="Domain" placeholder="Domain" className="p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans" />
+                            </div>
+
+                        </div>
+                        <div className="flex flex-row gap-x-2 w-[98%] justify-center items-center p-2">
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[50%]">
+                                <label htmlFor="file " className="text-blue-600 font-sans">Upload Image</label>
+                                <input type="file" id="file" name="file" className="p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans" />
+                            </div>
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[50%]">
+                                <label htmlFor="Domain" className="text-blue-600 font-sans">Internship Domain</label>
+                                <input type="text" id="Domain" name="Domain" placeholder="Domain" className="p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans" />
+                            </div>
+
+                        </div>
+                        <div className="flex flex-row gap-x-2 w-[100%] justify-center items-center p-2">
+                            <div className="flex flex-col gap-y-1 justify-center items-center w-[100%]">
+                                <label htmlFor="Skills" className="text-blue-600 font-sans">Skills and Expertise</label>
+                                <textarea name="Skills" id="Skills" cols="34" rows="4" placeholder="Skills and Expertise" className=" resize-none p-2 rounded-md outline-none focus:ring w-[90%] bg-white placeholder:text-blue-600 text-blue-600 font-sans"></textarea>
+
+                            </div>
+
+
+                        </div>
+
                     </form>
-                    {/* form - end */}
+
+
+
                 </div>
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default FormData
+export default FormData;

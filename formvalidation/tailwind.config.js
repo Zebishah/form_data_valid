@@ -25,7 +25,7 @@ module.exports = {
         'serif': ['Great Vibes', 'serif'],
       },
       boxShadow: {
-        'sm': '2px 1px 4px 2px rgba(0, 0, 0, 0.08)',
+        'sm': '0px 0px 30px 0px rgba(0, 0, 0, 0.08)',
       },
     },
     container: {
