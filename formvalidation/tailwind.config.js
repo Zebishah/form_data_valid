@@ -10,9 +10,9 @@ module.exports = {
       screens: {
         'sssm': '300px',
         'ssm': '500px',
-        'smd': '900px',
-        // 'md':'900px',
-        // 'lg':'1024px',
+        'smd': '700px',
+        'md': '900px',
+
         'xl': '1240px',
         // '2xl': '1280px', // Add a custom 2xl breakpoint
         // Add a custom 3xl breakpoint
