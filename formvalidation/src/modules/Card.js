@@ -7,9 +7,9 @@ const Card = (props) => {
     return (
 
 
-        <div className="flex flex-col gap-y-0 justify-center items-center smd:w-[38%] h-[20%] bg-[#141414] shadow-sm shadow-black ssm:w-[48%] sssm:w-[90%] ">
+        <div className="flex flex-col gap-y-0 justify-center items-center smd:w-[30%] h-[20%] bg-[#141414] shadow-sm shadow-black ssm:w-[48%] sssm:w-[90%] ">
             {
-                props.src ? (<img src={props.src} alt="" className="object-center w-[100%] h-[15rem]" />) : (<img src={image} alt="" className="object-cover object-center w-[100%] h-[100%]" />)
+                props.src ? (<img src={props.src} alt="" className="object-cover object-center w-[100%] h-[100%]" />) : (<img src={image} alt="" className="object-cover object-center w-[100%] h-[100%]" />)
 
             }
             <div className="flex flex-col gap-y-4 justify-start items-start p-4 w-[100%]">
